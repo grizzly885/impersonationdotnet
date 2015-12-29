@@ -14,7 +14,7 @@ namespace Impersonation
         public WindowsIdentity ImpersonateByProcessId(int pid)
         {
             identity = WindowsIdentity.GetCurrent();
-            IntPtr usertoken = WinApi.GetUserTokenFromProcessId(5280);
+            IntPtr usertoken = WinApi.GetUserTokenFromProcessId(pid);
             WindowsIdentity.Impersonate(usertoken);
             return WindowsIdentity.GetCurrent();
         }
