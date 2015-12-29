@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpersonationTutorial", "ImpersonationTutorial\ImpersonationTutorial.csproj", "{0CBAD739-4F76-4452-831D-65007B5EF12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impersonation", "Impersonation\Impersonation.csproj", "{23D4386E-385C-4B8E-B4D8-0FA9A4342E59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CBAD739-4F76-4452-831D-65007B5EF12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBAD739-4F76-4452-831D-65007B5EF12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBAD739-4F76-4452-831D-65007B5EF12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBAD739-4F76-4452-831D-65007B5EF12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D4386E-385C-4B8E-B4D8-0FA9A4342E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D4386E-385C-4B8E-B4D8-0FA9A4342E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D4386E-385C-4B8E-B4D8-0FA9A4342E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D4386E-385C-4B8E-B4D8-0FA9A4342E59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
