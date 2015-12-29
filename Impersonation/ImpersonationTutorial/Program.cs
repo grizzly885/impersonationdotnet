@@ -32,18 +32,19 @@ namespace ImpersonationTutorial
         static void ThreadProc(Object stateInfo)
         {
             var destination = stateInfo as string;
-
+           
             var identity = WindowsIdentity.GetCurrent();
             while (true)
             {
+                Console.WriteLine("Run");
                 PrintIdentity("Thread", identity);
                 //Using the ImpersonationManager
                 using (var impersonationNative = new ImpersonationManager())
-                {
+                {                   
                     impersonationNative.ImpersonateByProcessId(5280);
-                    ReadFiles(destination);
                     identity = WindowsIdentity.GetCurrent();
                     PrintIdentity("Thread", identity);
+                    ReadFiles(destination);                   
                 }
                 Thread.Sleep(1000);
                 identity = WindowsIdentity.GetCurrent();
